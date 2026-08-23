@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Ezcondo.MobileApp/" />
+  <Folder Name="/Ezcondo.WebApp/">
+    <Project Path="Ezcondo.BackendServer/Ezcondo.BackendServer.csproj" Id="8e1cabdb-1b1b-4752-9294-feea349f75f1" />
+    <Project Path="Ezcondo.Portal/Ezcondo.Portal.csproj" Id="d59ef3c6-8bc4-4020-b6dd-b5e5cc8469c7" />
+    <Project Path="Ezcondo.ViewModel/Ezcondo.ViewModel.csproj" Id="90871b0b-5778-46a4-91e0-715eb62f1e66" />
+  </Folder>
+</Solution>
