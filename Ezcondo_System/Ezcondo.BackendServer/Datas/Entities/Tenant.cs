@@ -1,0 +1,19 @@
+﻿using Ezcondo.BackendServer.Datas.Enums;
+
+namespace Ezcondo.BackendServer.Datas.Entities
+{
+	public class Tenant
+	{
+		public Guid Id { get; set; }
+		public string TenantName { get; set; }
+		public string ContactName { get; set; }
+		public string ContactPhone { get; set; }
+		public string ContactEmail { get; set; }
+		public string Address { get; set; }
+		public TenantStatusEnum Status  { get; set; }
+		public bool IsDeleted { get; set; }
+		public DateTime? DeletedAt { get; set; }
+		public DateTime CreatedAt { get; set; }
+		public DateTime UpdatedAt { get; set; }
+	}
+}
