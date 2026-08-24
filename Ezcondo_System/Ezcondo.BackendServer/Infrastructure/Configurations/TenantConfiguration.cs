@@ -9,7 +9,7 @@ namespace Ezcondo.BackendServer.Infrastructure.Configurations
 	{
 		public void Configure(EntityTypeBuilder<Tenant> builder)
 		{
-			builder.ToTable("Tenant");
+			builder.ToTable("Tenants");
 
 			builder.HasKey(x => x.Id);
 			builder.Property(x => x.Id)
@@ -57,6 +57,10 @@ namespace Ezcondo.BackendServer.Infrastructure.Configurations
 				.HasColumnName("updated_at")
 				.HasDefaultValueSql("now()")
 				.IsRequired();
+
+			//builder.Property(x => x.Licenses)
+			//	.HasColumnName("licenses")
+			//	.IsRequired();
 
 			//bỏ qua data đã xóa
 			builder.HasQueryFilter(x => !x.IsDeleted);
