@@ -8,7 +8,7 @@ namespace Ezcondo.BackendServer.Infrastructure.Configurations
 	{
 		public void Configure(EntityTypeBuilder<LicensePackage> builder)
 		{
-			builder.ToTable("LicensePackage");
+			builder.ToTable("License_Packages");
 
 			builder.HasKey(x => x.Id);
 			builder.Property(x => x.Id)

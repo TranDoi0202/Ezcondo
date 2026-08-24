@@ -15,5 +15,6 @@ namespace Ezcondo.BackendServer.Datas.Entities
 		public DateTime? DeletedAt { get; set; }
 		public DateTime CreatedAt { get; set; }
 		public DateTime UpdatedAt { get; set; }
+		public ICollection<TenantLicense> Licenses {  get; set; }
 	}
 }
