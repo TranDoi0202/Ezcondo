@@ -11,7 +11,7 @@ namespace Ezcondo.BackendServer.Infrastructure.Configurations
 		{
 			builder.ToTable("Tenant_Licenses");
 
-			builder.HasKey("Id");
+			builder.HasKey(x => x.Id);
 			builder.Property(x => x.Id)
 				.HasColumnName("id")
 				.HasDefaultValueSql("gen_random_uuid()");
@@ -66,7 +66,6 @@ namespace Ezcondo.BackendServer.Infrastructure.Configurations
 			builder.Property(x => x.LicensePackageId) //Khóa ngoại
 				.HasColumnName("license_package_id")
 				.IsRequired();
-
 			builder.HasOne(x => x.LicensePackage)
 				.WithMany()
 				.HasForeignKey(x => x.LicensePackageId)

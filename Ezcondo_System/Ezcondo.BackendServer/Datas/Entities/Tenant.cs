@@ -16,5 +16,9 @@ namespace Ezcondo.BackendServer.Datas.Entities
 		public DateTime CreatedAt { get; set; }
 		public DateTime UpdatedAt { get; set; }
 		public ICollection<TenantLicense> Licenses {  get; set; }
+		public ICollection<User> Users { get; set; }
+		public ICollection<PlatformPayment> PlatformPayments {  get; set; }
+		public ICollection<SystemIssue> SystemIssues {  get; set; }
+		public ICollection<SupportTicket> SupportTickets {  get; set; }
 	}
 }
