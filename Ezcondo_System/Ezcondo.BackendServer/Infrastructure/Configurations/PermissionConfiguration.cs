@@ -9,7 +9,7 @@ namespace Ezcondo.BackendServer.Infrastructure.Configurations
 		public void Configure(EntityTypeBuilder<Permission> builder)
 		{
 			builder.ToTable("Permissions");
-			builder.HasKey("Id");
+			builder.HasKey(x => x.Id);
 
 			builder.Property(x => x.Id)
 				.HasColumnName("id")

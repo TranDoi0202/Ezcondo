@@ -17,5 +17,6 @@ namespace Ezcondo.BackendServer.Datas.Entities
 		public LicensePackage LicensePackage { get; set; }
 		public Guid TenantId { get; set; }
 		public Tenant Tenant { get; set; }
+		public ICollection<PlatformPayment> PlatformPayments { get; set; }
 	}
 }
