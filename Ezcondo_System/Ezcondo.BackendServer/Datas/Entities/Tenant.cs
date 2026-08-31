@@ -20,5 +20,10 @@ namespace Ezcondo.BackendServer.Datas.Entities
 		public ICollection<PlatformPayment> PlatformPayments {  get; set; }
 		public ICollection<SystemIssue> SystemIssues {  get; set; }
 		public ICollection<SupportTicket> SupportTickets {  get; set; }
+		public ICollection<PeriodicReport> PeriodicReport { get; set; }
+		public ICollection<LegalDocument> LegalDocuments { get; set; }
+		public ICollection<Rule> Rules { get; set; }
+		public ICollection<ServiceConfig> ServiceConfigs { get; set; }
+		public ICollection<InvoiceBatch> InvoiceBatches {  get; set; }
 	}
 }

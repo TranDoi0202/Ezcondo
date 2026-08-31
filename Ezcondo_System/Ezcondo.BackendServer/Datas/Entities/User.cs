@@ -19,5 +19,8 @@ namespace Ezcondo.BackendServer.Datas.Entities
 		public Tenant? Tenant { get; set; }
 		public ICollection<AdminAuthLog> AdminAuthLogs { get; set; }
 		public ICollection<SupportTicket> SupportTickets { get; set; }
+		public ICollection<PeriodicReport> PeriodReports { get; set; }
+		public ICollection<InvoiceBatch> PreparedByIds { get; set; }
+		public ICollection<InvoiceBatch> ApprovedByIds { get; set; }
 	}
 }
